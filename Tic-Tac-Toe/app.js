@@ -48,42 +48,34 @@ const boxClicked = (e) => {
 const playerHasWon = () => {
     if(spaces[0] === currentPlayer){
         if(spaces[1] === currentPlayer && spaces[2] === currentPlayer){
-            console.log(`${currentPlayer} has won by top`);
             return true;
         }
 
         if(spaces[3] === currentPlayer && spaces[6] === currentPlayer){
-            console.log(`${currentPlayer} has won by left`);
             return true;
         }
 
         if(spaces[4] === currentPlayer && spaces[8] === currentPlayer){
-            console.log(`${currentPlayer} has won by diagonal`);
             return true;
         }
     }
     else if(spaces[8] === currentPlayer){
         if(spaces[2] === currentPlayer && spaces[5] === currentPlayer){
-            console.log(`${currentPlayer} has won by right`);
             return true;
         }
 
         if(spaces[6] === currentPlayer && spaces[7] === currentPlayer){
-            console.log(`${currentPlayer} has won by down`);
             return true;
         }
     }
     if(spaces[4] === currentPlayer){
         if(spaces[1] === currentPlayer && spaces[7] === currentPlayer){
-            console.log(`${currentPlayer} has won by right`);
             return true;
         }
         if(spaces[3] === currentPlayer && spaces[5] === currentPlayer){
-            console.log(`${currentPlayer} has won by right`);
             return true;
         }
         if(spaces[2] === currentPlayer && spaces[6] === currentPlayer){
-            console.log(`${currentPlayer} has won by diagnal`);
             return true;
         }
     }
